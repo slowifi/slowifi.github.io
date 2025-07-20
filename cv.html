@@ -33,10 +33,15 @@
 </head>
 <body class="min-h-screen flex flex-col">
     <!-- 헤더 섹션 -->
-    <header class="bg-gray-800 text-white py-6 shadow-md">
+    <header class="bg-gray-800 text-white py-6 shadow-md relative">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl font-bold mb-2 rounded-lg p-2 inline-block bg-gray-700">이민욱</h1>
             <p class="text-xl text-gray-300">이력서 (Curriculum Vitae)</p>
+        </div>
+        <div class="absolute top-4 right-4">
+            <a href="cv.html" class="text-white hover:text-blue-300 transition duration-300">ko</a>
+            <span class="text-white">/</span>
+            <a href="cv_en.html" class="text-white hover:text-blue-300 transition duration-300">en</a>
         </div>
     </header>
 
@@ -44,10 +49,10 @@
     <nav class="bg-gray-700 py-3 shadow-md">
         <div class="container mx-auto px-4">
             <ul class="flex justify-center space-x-8">
-                <li><a href="index.html" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">홈</a></li>
+                <li><a href="index.html" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">Home</a></li>
                 <li><a href="cv.html" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">CV</a></li>
-                <li><a href="#" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">프로젝트</a></li>
-                <li><a href="#" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">연락처</a></li>
+                <li><a href="projects.html" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">Projects</a></li>
+                <li><a href="contact.html" class="text-white hover:text-blue-300 transition duration-300 text-lg font-medium rounded-md px-4 py-2 hover:bg-gray-600">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -60,9 +65,9 @@
                 <div><strong class="text-gray-700">이름:</strong> 이민욱</div>
                 <div><strong class="text-gray-700">생년월일:</strong> 1998년 12월 04일</div>
                 <div><strong class="text-gray-700">국적:</strong> 대한민국</div>
-                <div><strong class="text-gray-700">연락처:</strong> [연락처를 입력하세요]</div>
-                <div><strong class="text-gray-700">이메일:</strong> [이메일 주소를 입력하세요]</div>
-                <div><strong class="text-gray-700">GitHub:</strong> <a href="https://github.com/slowifi" target="_blank" class="text-blue-600 hover:underline">slowifi</a></div>
+                <div><strong class="text-gray-700">연락처:</strong> +82-062-715-6377</div>
+                <div><strong class="text-gray-700">이메일:</strong> minwook-lee@gm.gist.ac.kr</div>
+                <!-- <div><strong class="text-gray-700">GitHub:</strong> <a href="https://github.com/slowifi" target="_blank" class="text-blue-600 hover:underline">slowifi</a></div> -->
             </div>
         </section>
 
@@ -70,24 +75,41 @@
             <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-3 mb-6">학력</h2>
             <div class="mb-6">
                 <h3 class="text-xl font-semibold text-gray-700">대학교</h3>
-                <p class="text-lg"><span class="font-medium">[대학교 이름]</span> - <span class="font-medium">[전공]</span></p>
-                <p class="text-md text-gray-600">[입학년도] ~ [졸업년도]</p>
+                <p class="text-lg"><span class="font-medium">GIST</span> - <span class="font-medium">전기전자컴퓨터공학부</span></p>
+                <p class="text-md text-gray-600">2017 ~ 2022</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">석사</h3>
+                <p class="text-lg"><span class="font-medium">GIST</span> - <span class="font-medium">AI 대학원 - 햅틱스</span></p>
+                <p class="text-md text-gray-600">2022 ~ 2024</p>
                 <ul class="list-disc list-inside text-md text-gray-700 mt-2">
-                    <li>[주요 과목 또는 성과 1]</li>
-                    <li>[주요 과목 또는 성과 2]</li>
+                    <li>복잡한 파형을 이용한 진동 유령 감각 렌더링 [졸업주제]</li>
+                    <li>실감형 문화콘텐츠 체험을 위한 사용자 맥락 기반 시각, 청각, 촉각 인터랙션 저작 기술 개발 [KOCCA]</li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold text-gray-700">대학원</h3>
-                <p class="text-lg"><span class="font-medium">[대학원 이름]</span> - <span class="font-medium">[전공]</span></p>
-                <p class="text-md text-gray-600">[입학년도] ~ [예상 졸업년도]</p>
+                <h3 class="text-xl font-semibold text-gray-700">박사</h3>
+                <p class="text-lg"><span class="font-medium">GIST</span> - <span class="font-medium">AI 융합학과 - 햅틱스</span></p>
+                <p class="text-md text-gray-600">2024 ~ 20xx</p>
                 <ul class="list-disc list-inside text-md text-gray-700 mt-2">
-                    <li>[연구 분야 또는 관심 분야 1]</li>
-                    <li>[연구 분야 또는 관심 분야 2]</li>
+                    <li>Textured Phantom Sensations: Rendering Spatial Textured Signals between Fingertips Using Vibrotactile Phantom Illusion [WHC 2025]</li>
+                    <li>초실감 메타버스 구현을 위한 촉감표준 및 고충실도 통합 햅틱 시스템 개발 [KRISS]</li>
                 </ul>
             </div>
         </section>
 
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-3 mb-6">관심 연구 분야</h2>
+            <div class="mb-6">
+                <p class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>햅틱 사용자 인터페이스</li>
+                    <li>진동 촉감 환상 및 인지</li>
+                </p>
+            </div>
+            <!-- 추가 경력이 있다면 위 div 블록을 복사하여 추가하세요 -->
+        </section>
+
+        <!--
         <section class="bg-white p-8 rounded-lg shadow-lg mb-8">
             <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-3 mb-6">경력</h2>
             <div class="mb-6">
@@ -99,30 +121,14 @@
                     <li>[주요 업무 및 성과 2]</li>
                 </ul>
             </div>
-            <!-- 추가 경력이 있다면 위 div 블록을 복사하여 추가하세요 -->
         </section>
+        -->
 
         <section class="bg-white p-8 rounded-lg shadow-lg mb-8">
             <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-3 mb-6">스킬</h2>
             <div class="mb-6">
                 <h3 class="text-xl font-semibold text-gray-700">프로그래밍 언어</h3>
-                <p class="text-lg">[Python, C++, Java, JavaScript 등]</p>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold text-gray-700">웹 기술</h3>
-                <p class="text-lg">HTML, CSS, JavaScript, [React, Vue.js 등]</p>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold text-gray-700">데이터베이스</h3>
-                <p class="text-lg">[MySQL, PostgreSQL, MongoDB 등]</p>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold text-gray-700">도구 및 플랫폼</h3>
-                <p class="text-lg">[Git, Docker, AWS, Google Cloud Platform 등]</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-semibold text-gray-700">기타 스킬</h3>
-                <p class="text-lg">[데이터 분석, 머신러닝, 임베디드 시스템, 외국어 등]</p>
+                <p class="text-lg">[Python, C++, C# (Unity), R 등]</p>
             </div>
         </section>
 
@@ -150,6 +156,58 @@
                 <ul class="list-disc list-inside text-md text-gray-700 mt-2">
                     <li>[담당 역할 및 기여 1]</li>
                     <li>[담당 역할 및 기여 2]</li>
+                </ul>
+                <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
+            </div>
+            <!-- 추가 프로젝트가 있다면 위 div 블록을 복사하여 추가하세요 -->
+        </section>
+        
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-3 mb-6">논문</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700">국제저널</h3>
+                <p class="text-lg">[프로젝트 설명]</p>
+                <p class="text-md text-gray-600">[참여 기간]</p>
+                <ul class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>[담당 역할 및 기여 1]</li>
+                    <li>[담당 역할 및 기여 2]</li>
+                </ul>
+                <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700">국제학회</h3>
+                <p class="text-lg">[프로젝트 설명]</p>
+                <p class="text-md text-gray-600">[참여 기간]</p>
+                <ul class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>[담당 역할 및 기여 1]</li>
+                    <li>[담당 역할 및 기여 2]</li>
+                </ul>
+                <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700">데모와 포스터</h3>
+                <p class="text-lg">[프로젝트 설명]</p>
+                <p class="text-md text-gray-600">[참여 기간]</p>
+                <ul class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>[담당 역할 및 기여 1]</li>
+                    <li>[담당 역할 및 기여 2]</li>
+                </ul>
+                <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700">국내저널</h3>
+                <p class="text-lg">[프로젝트 설명]</p>
+                <p class="text-md text-gray-600">[참여 기간]</p>
+                <ul class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>[담당 역할 및 기여 1]</li>
+                    <li>[담당 역할 및 기여 2]</li>
+                </ul>
+                <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700">국내학회</h3>
+                <ul class="list-disc list-inside text-md text-gray-700 mt-2">
+                    <li>[담당 역할 및 기여 1]</li>
                 </ul>
                 <p class="text-md text-gray-600 mt-2">관련 링크: <a href="#" target="_blank" class="text-blue-600 hover:underline">[GitHub/데모 링크]</a></p>
             </div>
